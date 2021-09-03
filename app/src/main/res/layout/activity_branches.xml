@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".Branches">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar3"
+        />
+
+    <ImageView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
+        android:onClick="onmapclick"
+        android:src="@drawable/map"/>
+
+    <TextView
+        android:id="@+id/b1t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1st Branch :"
+        android:textColor="#333399"
+        android:textSize="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/map"/>
+    <TextView
+        android:id="@+id/b1t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aaoukar, Beirut, Lebanon"
+        android:textColor="#333399"
+        android:textSize="22dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/b1t1"/>
+    <TextView
+        android:id="@+id/b1t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_string"
+        android:textColor="#333399"
+        android:textSize="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onphone1"
+        android:layout_below="@id/b1t2"/>
+
+    <TextView
+        android:id="@+id/b2t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2nd Branch :"
+        android:textColor="#333399"
+        android:layout_marginTop="22dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/b1t3"/>
+    <TextView
+        android:id="@+id/b2t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fanar, Beirut, Lebanon"
+        android:textColor="#333399"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:textSize="22dp"
+        android:layout_below="@id/b2t1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b2t2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onphone2"
+        android:text="@string/my_string2"
+        android:textColor="#333399"
+        android:textSize="22dp" />
+
+</RelativeLayout>

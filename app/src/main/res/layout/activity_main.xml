@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/icon_email"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="2dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/roboto"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:hint="Password"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/icon_password"
+        android:inputType="textPassword"
+        app:passwordToggleEnabled="true"
+        android:textSize="15sp"
+        android:fontFamily="@font/roboto"/>
+
+    <Button
+        android:id="@+id/getStarted"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:onClick="OnLogin"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+
+
+        />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TableRow
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account yet?"
+                android:textColor="#1B1B81"
+                android:textSize="15dp"
+                android:fontFamily="@font/roboto"/>
+            <TextView
+
+                android:fontFamily="@font/roboto"
+                android:layout_column="2"
+                android:id="@+id/signUpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Sign Up !"
+                android:textColor="#1B1B81"
+                android:textStyle="bold"
+                android:textSize="15dp"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow>
+
+            <View
+                android:layout_column="2"
+                style="@style/Divider"
+                android:layout_marginTop="2dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+</LinearLayout>

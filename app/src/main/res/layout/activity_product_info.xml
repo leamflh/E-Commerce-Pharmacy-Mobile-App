@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".productInfo">
+    <TextView
+        android:id="@+id/textProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#333399"
+        android:fontFamily="@font/roboto"
+        android:textSize="30dp"
+        android:text="Product" />
+
+    <TextView
+        android:id="@+id/qtyProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProduct"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#333399"
+        android:fontFamily="@font/roboto"
+        android:textSize="20dp"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/piecesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProduct"
+        android:layout_toRightOf="@+id/qtyProduct"
+        android:textColor="#333399"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:text="Pieces   /" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProduct"
+        android:layout_toRightOf="@+id/piecesText"
+        android:textColor="#333399"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:text="Price" />
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_below="@+id/qtyProduct"
+        android:layout_width="296dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        app:srcCompat="@drawable/icon_bell" />
+    <TextView
+        android:id="@+id/qtyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgProduct"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#333399"
+        android:fontFamily="@font/roboto"
+        android:textSize="30dp"
+        android:text="Quantity :" />
+
+    <NumberPicker
+        android:id="@+id/choice"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/qtyTitle"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:text="Add To Cart"
+        android:onClick="addToCart"
+        />
+
+
+
+</RelativeLayout>

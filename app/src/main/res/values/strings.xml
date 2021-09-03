@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MySqlDemo</string>
+    <string name="my_string"><u>04 544 923</u>.</string>
+    <string name="my_string2"><u>01 680 248</u>.</string>
+    <string name="my_string3"><u>SIGN UP!</u></string>
+
+
+</resources>

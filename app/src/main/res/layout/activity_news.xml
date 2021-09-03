@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context=".News">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar3"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="TOP NEWS"
+            android:textStyle="bold"
+            android:textColor="#333399"
+            android:textSize="55dp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view1"
+                    android:layout_width="395dp"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:onClick="onnews1"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textview1"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Lebanon surpasses 300,000 COVID-19
+                        case | Lebanon Daily News"
+                            android:textAlignment="center"
+                            android:textColor="#333399"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="195dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/textview1"
+                            android:src="@drawable/leb" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view2"
+                    android:layout_width="395dp"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:onClick="onnews2"
+                    android:layout_marginRight="25dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textview2"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Can a UV light kill the coronavirus? And is it safe to use? "
+                            android:textAlignment="center"
+                            android:textColor="#333399"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="195dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-2dp"
+                            android:layout_toRightOf="@+id/textview2"
+                            android:src="@drawable/uv" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Recent News"
+            android:textColor="#333399"
+            android:textSize="33dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="205dp"
+                android:layout_height="270dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:onClick="onnews3"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TableRow>
+                        <ImageView
+                            android:layout_width="205dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="-2dp"
+                            android:src="@drawable/virus2" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/textview3"
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:text="Coronavirus vaccine tracker : How many people have received shots?"
+                            android:textColor="#333399"
+                            android:paddingLeft="5dp"
+                            android:textSize="20dp" />
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="205dp"
+                android:layout_height="270dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:onClick="onnews4"
+                android:layout_toRightOf="@+id/card_view3"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TableRow>
+                        <ImageView
+                            android:layout_width="205dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="-2dp"
+                            android:src="@drawable/vaccine" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/textview4"
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+
+                            android:text="Two new vaccines found effective in clinical trials."
+                            android:textColor="#333399"
+                            android:paddingLeft="5dp"
+                            android:textSize="20dp" />
+                    </TableRow>
+
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

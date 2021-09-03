@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageProductCart"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/icon_name"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product"
+        android:layout_toRightOf="@+id/imageProductCart"
+        android:layout_marginTop="30dp"
+        android:textColor="#333399"
+        android:fontFamily="@font/roboto"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/priceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productName"
+        android:text="0.000L.L"
+        android:layout_toRightOf="@+id/imageProductCart"
+        android:layout_marginRight="20dp"
+        android:textColor="#333399"
+        android:fontFamily="@font/roboto"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/quantityProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productName"
+        android:text="quantity"
+        android:layout_toRightOf="@+id/priceProduct"
+        android:textColor="#333399"
+        android:fontFamily="@font/roboto"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#AF1E1E"
+        android:layout_toRightOf="@+id/imageProductCart"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="30dp"
+        android:text="-"
+
+        />
+
+
+</RelativeLayout>

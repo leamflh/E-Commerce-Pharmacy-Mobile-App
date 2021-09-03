@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_login"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchaseDone">
+    
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for your purchase !"
+        android:textSize="30dp"
+        android:textColor="#333399"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:text="Go Home"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="160dp"
+        android:onClick="goHome"
+
+        android:fontFamily="@font/roboto"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_login"
+    tools:context=".NewReminders">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar3"/>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Add New Pill reminder :"
+            android:textStyle="bold"
+            android:textColor="#333399"
+            android:textSize="32dp"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medecine name :"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/txt1"
+            android:textColor="#333399"/>
+
+        <EditText
+            android:id="@+id/edname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txt2"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How many days should you take this medecine?"
+            android:textSize="24dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edname"
+            android:textColor="#333399"/>
+
+        <NumberPicker
+            android:id="@+id/number_picker1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_below="@id/txt4"
+            android:layout_marginLeft="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Days"
+            android:textSize="23dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/number_picker1"
+            android:layout_below="@id/txt4"
+            android:layout_marginTop="50dp"
+            android:textColor="#333399"/>
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="At what time(s) would you like to receive the reminder?"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/number_picker1"
+            android:layout_marginTop="10dp"
+            android:textColor="#333399"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RadioGroup1"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/txt3">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Once"
+                android:id="@+id/radiobutton1"
+                android:textColor="#333399"
+                android:textSize="23dp"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:visibility="invisible"
+                android:id="@+id/RadioGroup2">
+                <RadioButton
+                    android:id="@+id/radiobutton21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning"
+                    android:textSize="23dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#333399"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"/>
+                <RadioButton
+                    android:id="@+id/radiobutton22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Noon"
+                    android:textSize="23dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#333399"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"/>
+                <RadioButton
+                    android:id="@+id/radiobutton23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Night"
+                    android:textSize="23dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#333399"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"/>
+            </RadioGroup>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twice (morning and night)"
+                android:textColor="#333399"
+                android:id="@+id/radiobutton2"
+                android:textSize="23dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 times a day (morning, noon and night)"
+                android:textColor="#333399"
+                android:id="@+id/radiobutton3"
+                android:textSize="23dp"
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btndone"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#333399"
+            android:text="Done"
+            android:textFontWeight="50"
+            android:layout_below="@id/RadioGroup1"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</ScrollView>
